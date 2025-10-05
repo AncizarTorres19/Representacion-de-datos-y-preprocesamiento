@@ -1,0 +1,57 @@
+{
+  "generos": [
+    "Accion",
+    "Romance",
+    "Comedia",
+    "Ciencia Ficcion"
+  ],
+  "perfil_u": {
+    "Accion": 3.8823529411764706,
+    "Romance": 1.7058823529411764,
+    "Comedia": 2.176470588235294,
+    "Ciencia Ficcion": 2.7058823529411766
+  },
+  "norma_u": 5.481014731904073,
+  "resultados": [
+    {
+      "Pelicula": "Avengers",
+      "Producto punto (u·m)": 36.29411764705882,
+      "|u|": 5.481014731904073,
+      "|m|": 6.782329983125268,
+      "Producto normas (|u|·|m|)": 37.1740505541443,
+      "Similitud coseno": 0.9763293777791621
+    },
+    {
+      "Pelicula": "Matrix",
+      "Producto punto (u·m)": 34.64705882352941,
+      "|u|": 5.481014731904073,
+      "|m|": 7.14142842854285,
+      "Producto normas (|u|·|m|)": 39.14227442368192,
+      "Similitud coseno": 0.8851570158776261
+    },
+    {
+      "Pelicula": "Deadpool",
+      "Producto punto (u·m)": 30.823529411764703,
+      "|u|": 5.481014731904073,
+      "|m|": 6.557438524302,
+      "Producto normas (|u|·|m|)": 35.94141715525457,
+      "Similitud coseno": 0.8576047315724266
+    },
+    {
+      "Pelicula": "Titanic",
+      "Producto punto (u·m)": 12.411764705882353,
+      "|u|": 5.481014731904073,
+      "|m|": 5.0990195135927845,
+      "Producto normas (|u|·|m|)": 27.947801072268394,
+      "Similitud coseno": 0.4441052329586711
+    },
+    {
+      "Pelicula": "La La Land",
+      "Producto punto (u·m)": 12.882352941176471,
+      "|u|": 5.481014731904073,
+      "|m|": 5.385164807134504,
+      "Producto normas (|u|·|m|)": 29.516167641635572,
+      "Similitud coseno": 0.4364507309209274
+    }
+  ]
+}
