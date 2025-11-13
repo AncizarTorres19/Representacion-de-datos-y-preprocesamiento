@@ -8,12 +8,12 @@ from fractions import Fraction
 # -------------------------------------------------------------
 # 
 # -------------------------------------------------------------
-d1 = np.arange(1, 7)
-d2 = np.arange(1, 7)
-D1, D2 = np.meshgrid(d1, d2)
-D1 = D1.flatten()
-D2 = D2.flatten()
-df = pd.DataFrame({'dado1': D1, 'dado2': D2})
+d1 = np.arange(1, 7) # Valores posibles del dado 1
+d2 = np.arange(1, 7) # Valores posibles del dado 2
+D1, D2 = np.meshgrid(d1, d2) # Crear una cuadrícula de todos los posibles resultados
+D1 = D1.flatten() # Aplanar a una sola dimensión
+D2 = D2.flatten() # Aplanar a una sola dimensión
+df = pd.DataFrame({'dado1': D1, 'dado2': D2}) # DataFrame con todas las combinaciones posibles (36)
 
 # Eventos
 A = (df['dado1'] + df['dado2']) == 8              # Ej1: suma 8

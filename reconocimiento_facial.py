@@ -92,10 +92,10 @@ print(f"   Fracción simplificada: {P_NoA_dado_NoMarca_frac}")
 print(f"   Interpretación: Si el sistema NO marca, hay {P_NoA_dado_NoMarca*100:.4f}% de probabilidad de estar limpio")
 
 # -------------------------------------------------------------
-# TABLA DE CONTINGENCIA (para visualización)
+# TABLA PARA VISUALIZACIÓN DE RESULTADOS
 # -------------------------------------------------------------
 print("\n" + "="*70)
-print("TABLA DE CONTINGENCIA")
+print("TABLA PARA VISUALIZACIÓN DE RESULTADOS")
 print("="*70)
 print(f"{'':20} | {'Marca':>15} | {'NoMarca':>15} | {'Total':>15}")
 print("-"*70)
@@ -105,21 +105,11 @@ print("-"*70)
 print(f"{'Total':20} | {sistema_marca:>15} | {total_no_marcados:>15} | {total_personas:>15}")
 
 # -------------------------------------------------------------
-# MÉTRICAS ADICIONALES DEL SISTEMA (bonus)
+#
 # -------------------------------------------------------------
 print("\n" + "="*70)
-print("MÉTRICAS DEL SISTEMA (bonus)")
+print("")
 print("="*70)
-
-# Sensibilidad (Recall): De los que están en lista, ¿cuántos detecta?
-sensibilidad = marcados_y_sospechosos / realmente_alerta
-print(f"Sensibilidad (Recall): {sensibilidad:.4f} = {sensibilidad*100:.2f}%")
-print(f"  → De cada 100 personas en lista, el sistema detecta {sensibilidad*100:.1f}")
-
-# Especificidad: De los que NO están en lista, ¿cuántos NO marca?
-especificidad = no_marcados_no_sospechosos / (total_personas - realmente_alerta)
-print(f"Especificidad: {especificidad:.4f} = {especificidad*100:.4f}%")
-print(f"  → De cada 100 personas limpias, el sistema deja pasar {especificidad*100:.2f}")
 
 # Precisión (Precision): De los marcados, ¿cuántos son realmente sospechosos?
 precision = marcados_y_sospechosos / sistema_marca
